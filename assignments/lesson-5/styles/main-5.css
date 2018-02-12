@@ -4,26 +4,46 @@
 
 body {
   font-size: 16px;
+    font-family: 'Georgia', 'Palation', serif;
+    color: black;
   /* Declare the base font-family - from google font api or other */
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    max-width: 1000px;
+    margin: auto;
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
 header {}
-header h1 {}
-header img {}
-header .subheading {}
+header h1 {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+header img {
+    padding-left: 4em;
+    padding-top: 1em;
+    margin: auto;
+}
+
+header .subheading {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 1em;
+}
 
 nav {}
-nav button {}
 
 nav ul {
     list-style-type: none;
     margin:0;
-    padding:0;
+    padding:10px;
+    width: 100%;
     overflow:hidden;
+    background-color: #326F8B;
     }
 
 nav ul li {
@@ -32,8 +52,12 @@ nav ul li {
 
 nav ul li a {
     display: block;
+    text-align:center;
+    text-decoration:none;
+    color: #fff;
+    font-family:sans-serif;
+    font-size:14px;
     padding: 8px;
-    background-color: #326F8B;
 }
 
 nav ul li.active a {
@@ -47,44 +71,98 @@ nav ul li a:hover {
 
 main {}
 main h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align:center;
+    font-size: 24px;
     color:#326F8B;
 }
 
+main h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #326F8B
+}
+
+main figure {
+    margin: 0 0 .2rem 2%; width: 96%;
+}
+
+main figure img {
+    width: 100%;
+}
+
+picture img {
+    display: block;
+    padding: .5rem 0 .5rem;
+    width: 30%
+    height: 30%;
+}
+
+section {
+    display: block;
+    text-align: center;
+}
+
 .highlow {
-    float: left; 
+    font-size 16px;
 }
 
 .current {
-    
+    font-size: 16px;
 }
 
 .conditions {
-    float:right;
+    font-size:16px;
+    padding-bottom: 5px;
 }
 
-table, th, td {
-    border: 1px solid black;
+tbody td {
+    font-size: 14px;
+    text-align: center;
+    
+}
+table {}
+
+th, td {
+    padding: 10px;
 }
 
 th {
+    width: 95%
+    padding: 10px;
     background-color: darkgray
 }
 
+.forecast h3 {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkgray;
+    padding: 8px;
+    text-align: left;
+}
+
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 50%; /* fill the page in the small/phone view */
-  margin: 8px;
-  float:right;
+ /* fill the page in the small/phone view */
+    padding: .5rem 0 .5rem;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 footer {
-    display: block;
-    padding: 8px;
-    color:white;
+    font-size: 10px;
+    font-family: serif;
+    line-height: 1;
     background-color: #326F8B;
+    color: #fff;
+    text-align: center;
 }
 footer aside {}
 footer>p {
-    
+    padding: 1em;
 } /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
