@@ -13,3 +13,18 @@
 nav {
     display: inline;
 }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    pading: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: .6rem 1rem;
+}

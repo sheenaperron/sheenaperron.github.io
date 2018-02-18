@@ -6,6 +6,7 @@ body {
   font-size: 16px;
     font-family: 'Georgia', 'Palation', serif;
     color: black;
+    overflow: auto;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -24,6 +25,36 @@ header h1 {
     font-size: 30px;
     text-align: center;
     margin: 0;
+}
+
+.hamburger {display: block;
+            position: absolute;
+            top: 2.0rem;
+            right: 1.25rem;}
+
+.navigation {
+    list-style:none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+    .navigation.responsive {position: relative;}
+    .navigation.responsive li {background-color: #eee;
+    display: block;
+    width: 100%;
+    margin: 2 px 0;
+    border: 1px solid #ddd;}
+    navigation.responsive.li a {padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;}
+    .navigation.responsive li a:hover {
+        background-color: #ddd;
+    }
 }
 
 header figure.logo{
@@ -83,7 +114,7 @@ main {
 }
 
 main figure.sunny-large {
-    width: 30%;
+    width: 100%;
     margin: 0 0 0 2%;
 }
 
