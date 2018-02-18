@@ -69,7 +69,18 @@ nav ul li a:hover {
     color:#96B460;
 }
 
-main {}
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+main figure.sunny-large {
+    width: 50%;
+    margin: 0 0 0 2%;
+}
+
+main figure.sunn-large img{ width: 100%;}
+
 main h2 {
     font-family: sans-serif;
     font-weight: bold;

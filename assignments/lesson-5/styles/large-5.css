@@ -1,5 +1,12 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    /*----------MAIN----------*/
+    main {
+        padding: 0;
+    }
+    main figure.sunny-large {width: 100%; margin: 0;}
+    main figure.sunny-large img {width: 100%;}
   
   article p.town-article img { width: 29.333%; }
   
