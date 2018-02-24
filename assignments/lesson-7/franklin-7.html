@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Or Not Weather Page</title>
+  <meta name="sheenaperron" content="Weather Or Not Weather Site">
+  <meta name="description" content="Local Up-to-Date Weather Forecast">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-6.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+
+<body>
+
+  <header>
+    <figure class="logo">
+        <img src="images/weather-or-not-logo-cit230.png" alt="Weather or not logo">
+    </figure>
+      
+    <h1>Weather Or Not</h1>
+    <div class="subheading">Up-to-date Weather Whether You Like It or Not.</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button class= "hamburger"
+            onclick="toggleNavMenu()">&#9776;</button>
+    
+    <ul id="navigation" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main class="clearfix">
+    <figure class="sunny-large">
+      <img src="images/franklin-image-sunnysky.jpg" alt="sunny-picture" sizes="100vw"
+           srcset="images/franklin-image-sunnysky-small.jpg 500w, 
+            images/franklin-image-sunnysky-medium.jpg 800w,
+            images/franklin-image-sunnysky-large.jpg 1200w">
+    </figure>
+      <h2><strong>Franklin</strong></h2>
+                   
+    <section>
+      <h3>Weather Summary</h3>    
+      
+       <div class= "highlow" >
+            <p>High: <strong>89&deg;F</strong></p>  
+            <p>Low: <strong>49&deg;F</strong></p>  
+        </div>
+        
+        <div class="current">
+            Sunny
+            <picture>
+                <img src="images/sunny-weather-forecast-pic.png" alt="sunny" width="200">
+            </picture>
+        </div> 
+        
+      <div class = "conditions">
+        <p>Precipitation: <strong>0%</strong></p>  
+        <p>Wind Speed: <strong>8mph NW</strong></p>  
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+    
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Franklin Breaks Record with Warm Temperatures</h3>	
+      <p class="town-article">
+        <img src="images/franklin-home-pic.jpg" alt="franklin home picture" width="100px">
+        This fall has been fairly average, but last week Franklin saw record-breaking temperatures. Last Monday we saw temperatures rise to almost 80 degrees. Many residents didn't mind the record breaking temps, instead they got outside and enjoyed the summer-like weather.
+      </p>
+		</article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+    <h4>Contact Info</h4>
+      <p>Weather Or Not<br> 123 Sunny Side Street, Franklin, MA 02038 (123) 456-7890 contact@weatherornot.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Or Not Weather Site | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>
