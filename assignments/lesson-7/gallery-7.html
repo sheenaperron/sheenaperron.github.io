@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Or Not Weather Page</title>
+  <meta name="sheenaperron" content="Weather Or Not Weather Site">
+  <meta name="description" content="Local Up-to-Date Weather Forecast">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-6.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+
+<body>
+
+    <header class="clearfix">
+        <figure class="logo">
+        <img src="images/weather-or-not-logo-cit230.png" alt="Weather or not logo">
+        </figure>
+      
+    <h1>Weather Or Not</h1>
+    <div class="subheading">Up-to-date Weather Whether You Like It or Not.</div>
+    </header>
+    
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button class= "hamburger"
+            onclick="toggleNavMenu()">&#9776;</button>
+    
+        <ul id="navigation" class="hide">
+    	   <li><a href="#">Home</a></li>
+    	   <li class="active"><a href="#">Franklin</a></li>
+    	   <li><a href="#">Greenville</a></li>
+    	   <li><a href="#">Springfield</a></li>
+    	   <li><a href="#">Storm Center</a></li>
+    	   <li><a href="#">Gallery</a></li>
+        </ul>		
+    </nav>
+    
+    <main class="gallery">
+        <div id="gallery">
+            <figure><img class="first" src="images/blue-sky.jpg"
+            srcset="images/blue-sky.jpg 600w, 
+            images/blue-sky.jpg 400w,
+            images/blue-sky.jpg 2000w" alt="Blue Sky with Clouds">
+            <figcaption>Beautiful Blue Sky with White Fluffy Clouds</figcaption>
+            </figure>
+            
+            <figure> <img class="second" src="images/fall-weather.jpg"
+            srcset="images/fall-weather.jpg 600w,
+                images/fall-weather.jpg 400w,
+                images/fall-weather.jpg 200w" alt="Fall Leaves">
+                <figcaption>Tall Trees with Beautiful Fall Leaves</figcaption>
+            </figure>
+            
+            <figure> <img class="third" src="images/dark-cloudy-sky.jpg"
+            srcset="images/dark-cloudy-sky.jpg 600w,
+                images/dark-cloudy-sky.jpg 400w,
+                images/dark-cloudy-sky.jpg 200w" alt="Dark Cloudy Sky">
+                <figcaption>Dark Cloudy Sky over a Lonely Road</figcaption>
+            </figure>
+            
+            <figure> <img class="fourth" src="images/frosty-photo.jpg"
+            srcset="images/frosty-photo.jpg 600w,
+                images/frosty-photo.jpg 400w,
+                images/frosty-photo.jpg 200w" alt="Frost">
+                <figcaption>Frosty Branches on a Cold Winter Morning</figcaption>
+            </figure>
+            
+            <figure> <img class="fifth" src="images/lightning.jpg"
+            srcset="images/lightning.jpg 600w,
+                images/lightning.jpg 400w,
+                images/lightning.jpg 200w" alt="Lightning">
+                <figcaption>A Dark Sky Filled with Lightning</figcaption>
+            </figure>
+            
+             <figure> <img class="sixth" src="images/snowy-road.jpg"
+            srcset="images/snowy-road.jpg 600w,
+                images/snowy-road.jpg 400w,
+                images/snowy-road.jpg 200w" alt="Snowy Road">
+                <figcaption>A Lonely Snowy Winter Road</figcaption>
+            </figure>
+            
+        </div>
+    
+    </main>
+    
+    <footer>
+    <aside>
+        <p><span id="footer-title" class="site-name"> Weather Or Not Weather Site</span> <br>
+        123 Sunny Side Street<br>
+        Franklin, MA 02038<br>
+        (123) 456-7890<br>
+        contact@weatherornot.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Or Not Weather Site | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>

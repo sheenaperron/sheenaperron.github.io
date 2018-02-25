@@ -17,10 +17,10 @@
 
 <body>
 
-  <header>
-    <figure class="logo">
+    <header class="clearfix">
+        <figure class="logo">
         <img src="images/weather-or-not-logo-cit230.png" alt="Weather or not logo">
-    </figure>
+        </figure>
       
     <h1>Weather Or Not</h1>
     <div class="subheading">Up-to-date Weather Whether You Like It or Not.</div>
@@ -50,7 +50,7 @@
     </figure>
       <h2><strong>Franklin</strong></h2>
                    
-    <section>
+    <section class="weather-summary">
       <h3>Weather Summary</h3>    
       
        <div class= "highlow" >
@@ -59,9 +59,9 @@
         </div>
         
         <div class="current">
-            Sunny
+            <p>Sunny</p>
             <picture>
-                <img src="images/sunny-weather-forecast-pic.png" alt="sunny" width="200">
+                <img src="images/sunny-weather-forecast-pic.png" alt="sunny">
             </picture>
         </div> 
         
@@ -106,22 +106,25 @@
       </table>
     </section>
       
-    <article>
-      <h3>Franklin Breaks Record with Warm Temperatures</h3>	
-      <p class="town-article">
-        <img src="images/franklin-home-pic.jpg" alt="franklin home picture" width="100px">
-        This fall has been fairly average, but last week Franklin saw record-breaking temperatures. Last Monday we saw temperatures rise to almost 80 degrees. Many residents didn't mind the record breaking temps, instead they got outside and enjoyed the summer-like weather.
-      </p>
-		</article>		  
+      <article>
+        <h3>Franklin Breaks Record with Warm Temperatures</h3>	
+          <p class="town-article">
+              <img src="images/franklin-home-pic.jpg" alt="franklin home picture" width="100px">
+            This fall has been fairly average, but last week Franklin saw record-breaking temperatures. Last Monday we saw temperatures rise to almost 80 degrees. Many residents didn't mind the record breaking temps, instead they got outside and enjoyed the summer-like weather.
+          </p>
+      </article>		  
   
   </main>
     
   <footer>
     <aside>
-    <h4>Contact Info</h4>
-      <p>Weather Or Not<br> 123 Sunny Side Street, Franklin, MA 02038 (123) 456-7890 contact@weatherornot.com</p>
+        <p><span id="footer-title" class="site-name"> Weather Or Not Weather Site</span> <br>
+        123 Sunny Side Street<br>
+        Franklin, MA 02038<br>
+        (123) 456-7890<br>
+        contact@weatherornot.com</p>
     </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Or Not Weather Site | <span id="currentdate">Current Date Placeholder</span></p>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Or Not Weather Site | <span id="currentdate"></span></p>
   </footer>
 
   <script src="scripts/hamburger.js"></script>

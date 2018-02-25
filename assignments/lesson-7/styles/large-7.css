@@ -28,3 +28,14 @@ nav ul li {
 nav ul li a {
     padding: .6rem 1rem;
 }
+
+div#gallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+div#gallery figure img:hover {
+    box-shadow: 5px 5px 10px gray;
+}
