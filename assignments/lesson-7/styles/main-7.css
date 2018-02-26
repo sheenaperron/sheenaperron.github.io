@@ -27,15 +27,12 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-#site-logo {
+header figure.logo {
     width: 100px;
     height: 64px;
     margin-bottom: 1em;
 }
 
-header.column {
-    flex: 1;
-}
 
 header h1 {
     font-family: 'Montserrat';
@@ -91,7 +88,7 @@ header .subheading {
 }
 
 nav {
-    display:flex;
+    display: flex;
     justify-content: center;
     background-color: #326F8B;
     color: white;
