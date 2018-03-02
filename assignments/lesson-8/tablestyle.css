@@ -1,15 +1,38 @@
 table {
     text-align: center;
     font-family: Ubuntu, sans-serif;
-    border: 1px solid lightgray;
+    box-shadow: 9px 9px 9px #628CA6;
+    background-color: lightgray;
 }
 
+th, td{
+    padding: 8px;
+}
 .header {
-    font-size:26px;
-    background-color: #7fb9c2;
-    margin: 0;
+    font-size:24px;
+    background-color: #7FB9C2;
+    /*margin: 0;
+    padding: 50px;*/
 }
 
-.col-title {
-    
+.col-title, #novgoal {
+    background-color: #628CA6;
+    color: white;
+}
+
+.data {
+    background-color: #E7F0ED;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E7FFED;
+}
+
+#blackfri {
+    font-style: italic;
+}
+
+.footer {
+    font-size: 12px;
+    background-color: #7FB9C2;
 }
