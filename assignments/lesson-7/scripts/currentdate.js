@@ -19,5 +19,5 @@ if (dd < 10) {
 if (mm < 10) {
     mm = '0' + mm;
 }
-var today = n + ', ' + mm + '/' + dd + '/' + yyyy;
-document.write(today);
+//*var today = n + ', ' + mm + ' /' + dd + '/' + yyyy;*//
+document.getElementById("currentdate").innerHTML = n + ', ' + mm + '/' + dd + '/' + yyyy;
