@@ -38,75 +38,76 @@
     </nav>
     
   <main>
-      <h1 class="storm-report">Report a Storm</h1>
-        <form action="" method="post" enctype="multipart/form-data" name="stormreport" id="report">
+    <h2>Report a Storm</h2>
+      <div class="flex-container" "personalInfo">
+        <form action="thanks.html" method="get" enctype="multipart/form-data" name="stormreport" id="report">
+            
             <fieldset>
                 <legend><span>Personal Information</span></legend>
-                <label>
-                <span>Full Name: </span>
+                <label><span>Full Name: </span>
                     <input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z ]{5,99}" required>
                 </label>
-                
+          
                 <label><span>Email: </span>
                     <input name="email" type="email" value="" placeholder="myemail@myemail.com"></label>
-                
+        
                 <label><span>Phone Number: </span>
                     <input name="phone" type="tel" value="" placeholder="1235551234" pattern="[0-9]{10,20}" required></label>
-                
+               
                 <label><span>Zip Code:</span>
                     <input name="zip" type="number" value="" required></label>
             </fieldset>
-                
+                <br>
+
+        <!--<div class="flex-container" "stormInfo">-->
             <fieldset>
                 <legend><span>Storm Information</span></legend>
                 <label><span>Storm Date:</span>
                     <input name="stormdate" type="date" value=""></label>
-                <label><span>Storm Type:</span>
+      
+                <label><span>Storm Type</span></label>
                     <input name="stormType" list="stormTypes">
-                <datalist id="stormTypes">
-                    <option value="Flash Flood"></option>
-                    <option value="Hail"></option>
-                    <option value="Hurricane"></option>
-                    <option value="Thunderstorm"></option>
-                    <option value="Tornado"></option>
-                </datalist>
-                </label>
+                    <datalist id="stormTypes">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                        </datalist>
                 
-                <label for="rating">Storm Severity Rating (1 to 10)</label>
-                <span class="marginauto">
-                <input type="range" id="rating"
+                    <label><span>Storm Severity Rating (1 to 10)</span></label>
+                    <input type="range" id="rating"
                        value="5" min="1" max="10" step="1"
                        oninput="adjustRating(this.value)"
                        onchange="adustRating(this.value)">
-                        <span id="ratingvalue">5</span><br>
-                    
-                <label>
+                        <span id="ratingvalue">5</span>
+                   
+                    <label>
                     <span>Storm Region</span>
                     <select name="region">
                         <option selected disabled>Select Region...
-                        <option>value="Franklin">Franklin</option>
-                        <option>value="Grenville">Greenville</option>
-                        <option>value="Springfield">Springfield</option>
+                        <option value="Franklin">Franklin</option>
+                        <option value="Grenville">Greenville</option>
+                        <option value="Springfield">Springfield</option>
                         </select>
                     </label>
                     
-                    <span class="marginAuto">User In-Danger Level</span>
+                        <label>User In-Danger Level</label>
                         <label><input type="radio" name="dangerlevel" value="Yes">Yes</label>
                         <label><input type="radio" name="dangerlevel" value="Maybe">Maybe</label>
                         <label><input type="radio" name="dangerlevel" value="No">No</label>
-                    
+       
                     <label>
                         <span>Additional Information or Comments:</span>
                         <textarea name="additionalinfo" placeholder="Please enter any additional information here..."></textarea>
                     </label>
-                    
                     <input type="submit" value="Submit" class="marginAuto" "submitButton">
-                    
-                </span>
-            </fieldset>
-      
-        </form>		  
-  
+                   
+                    </fieldset>
+                    </form>
+                 </div>
+        
+       
   </main>
     
     <footer>
