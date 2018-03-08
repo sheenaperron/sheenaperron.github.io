@@ -65,7 +65,7 @@
                 <label><span>Storm Date:</span>
                     <input name="stormdate" type="date" value=""></label>
       
-                <label><span>Storm Type</span></label>
+                    <label><span>Storm Type</span>
                     <input name="stormType" list="stormTypes">
                     <datalist id="stormTypes">
                         <option value="Flash Flood"></option>
@@ -74,13 +74,14 @@
                         <option value="Thunderstorm"></option>
                         <option value="Tornado"></option>
                         </datalist>
+                    </label>
                 
-                    <label><span>Storm Severity Rating (1 to 10)</span></label>
+                    <label><span>Storm Severity Rating (1 to 10)</span>
                     <input type="range" id="rating"
                        value="5" min="1" max="10" step="1"
                        oninput="adjustRating(this.value)"
                        onchange="adustRating(this.value)">
-                        <span id="ratingvalue">5</span>
+                        <span id="ratingvalue">5</span></label>
                    
                     <label>
                     <span>Storm Region</span>
@@ -92,16 +93,17 @@
                         </select>
                     </label>
                     
-                        <label>User In-Danger Level</label>
+                    <label><span>User In-Danger Level</span>
                         <label><input type="radio" name="dangerlevel" value="Yes">Yes</label>
                         <label><input type="radio" name="dangerlevel" value="Maybe">Maybe</label>
                         <label><input type="radio" name="dangerlevel" value="No">No</label>
+                    </label>
        
                     <label>
                         <span>Additional Information or Comments:</span>
                         <textarea name="additionalinfo" placeholder="Please enter any additional information here..."></textarea>
                     </label>
-                    <input type="submit" value="Submit" class="marginAuto" "submitButton">
+                    <input type="submit" value="Submit" class="submitButton">
                    
                     </fieldset>
                     </form>

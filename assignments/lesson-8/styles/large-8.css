@@ -1,8 +1,8 @@
 @media only screen and (min-width: 64em) {
 
 main {
-        display: inline-block;
-        text-align: center;
+       /* display: inline-block;*/
+        /*text-align: center;*/
         padding: 0;
         max-width: 1200px;
 }

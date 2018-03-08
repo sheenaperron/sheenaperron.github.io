@@ -29,11 +29,11 @@
         <button class= "hamburger" onclick="toggleNavMenu()">&#9776;</button>
         <ul id="navMenu" class="hide">
     	   <li><a href="#">Home</a></li>
-    	   <li class="active"><a href="#">Franklin</a></li>
+    	   <li class="active"><a href="/franklin-8.html">Franklin</a></li>
     	   <li><a href="#">Greenville</a></li>
     	   <li><a href="#">Springfield</a></li>
-    	   <li><a href="#">Storm Center</a></li>
-    	   <li><a href="">Gallery</a></li>
+    	   <li><a href="/stormcenter.html">Storm Center</a></li>
+    	   <li><a href="/gallery-7.html">Gallery</a></li>
         </ul>		
     </nav>
     
@@ -49,7 +49,7 @@
     <section>
             <h3>Weather Summary</h3>
                <div class= "highlow" >
-                <p class="floatLeft">High: <strong>89&deg;F</strong></p>  
+                <p>High: <strong>89&deg;F</strong></p>  
                 <p class="floatRight">Low: <strong>49&deg;F</strong></p>  
                 </div>
         
@@ -60,11 +60,11 @@
                     </picture>
                 </div>  
         
-      <div class ="conditions">
-        <p>Precipitation: <strong>0%</strong></p>  
-        <p>Wind Speed: <strong>8mph NW</strong></p>
-        <p>Windchill Temperature:<span id="windchillTemp"></span></p>
-      </div>
+            <div class ="conditions">
+            <p>Precipitation: <strong>0%</strong></p>  
+            <p>Wind Speed: <strong>8mph NW</strong></p>
+            <p>Windchill Temperature:<span id="windChill"></span></p>
+            </div>
       </section>
         
     <section id="tenDayforecast" class="forecast">
@@ -122,13 +122,14 @@
 <footer>
     <aside>
     <h4>Contact Info</h4>
-      <p>Weather Or Not<br> 123 Sunny Side Street, Franklin, MA 02038 (123) 456-7890 contact@weatherornot.com</p>
+      <p><strong>Weather Or Not</strong><br> 123 Sunny Side Street, Franklin, MA 02038 (123) 456-7890 contact@weatherornot.com</p>
     </aside>
     <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Or Not Weather Site | <span id="currentdate"></span></p>
 </footer>
 
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
 
 </body>
 </html>

@@ -1,15 +1,10 @@
-var t = 22;
-var 2 = 18;
-var f = getWindChill(t,s);
+function windChill() {
+var h = parseInt(document.getElementById("hightemp").innerHTML);
+var l = parseInt(document.getElementById("lowtemp").innerHTML);
+var s = parseInt(document.getElementById("speed").innerHTML);
 
-document.getElementById("windSpeed").innerHTML = s;
-document.getElementById("temp").innerHTML = t + "&deg";
-document.getElementById("windChill").innerHTML = f + "&deg";
-
-console.log(f);
-
-function getWindChill(t,s)
-{
-    var windChill = 35.74 + .6215 *  t - 35.75 * Math.pow(s, .16) + .4275 * t * Math.pow(s, .16);
-    return parseInt(windChill);
+var average = (h + l) / 2;
+var windchill = Math.round(35.74 + (.6215 * average) - (35.75 * (Math.pow(s, .16))) + (.4275 * average * (Math.pow(s,.16))));
+    
+document.getElementById("windChill").innerHTML = windchill;
 }
