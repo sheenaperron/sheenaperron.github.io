@@ -33,24 +33,29 @@ header img {
 
 header h1{
     display: inline-flex;
+    font-family: 'Montserrat' sans-serif;
+    font-size: 30px;
+    text-align:center;
+    margin:0;
     flex-flow: column nowrap;
     justify-content: center;
 }
 
 header .subheading {
-    font-size: 16px;
+    font-family: 'Montserrat'sans-serif;
+    font-size: 18px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     display:flex;
     color: #326F8B;
 }
 
-header h1 {
+/*header h1 {
     font-family: 'Montserrat';
     font-size: 30px;
     text-align: center;
     margin: 0;
-}
+}*/
 
 nav {
     display: hide;
@@ -124,7 +129,7 @@ main h3 {
     font-weight: bold;
     text-align: center;
     color: #326F8B
-}*/
+}
 
 section.forecast h3 {
     margin-left: auto;

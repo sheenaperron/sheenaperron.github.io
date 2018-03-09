@@ -10,9 +10,10 @@
   <!-- external style references in the proper cascading order -->    
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
-  <link href="styles/medium-6.css" rel="stylesheet">  <!-- medium/tablet views -->
-  <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+  <link href="styles/gallery.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,54 +40,34 @@
         </ul>		
     </nav>
     
-    <main class="gallery">
-        <div id="gallery">
-            <figure>
-            <img class="first" src="images/blue-sky.jpg"
-            srcset="images/blue-sky.jpg 600w, 
-            images/blue-sky.jpg 400w,
-            images/blue-sky.jpg 2000w" alt="Blue Sky with Clouds">
-            <figcaption>Beautiful Blue Sky with White Fluffy Clouds</figcaption>
-            </figure>
+    <h1>Gallery</h1>
+    
+        <div class="grid-container">
+            <div class="grid-item"></div>
+            <img class="first" src="images/blue-sky.jpg" alt="" width="100px">
+                <figcaption>Beautiful Blue Sky with White Fluffy Clouds</figcaption>
             
-            <figure> <img class="second" src="images/fall-weather.jpg"
-            srcset="images/fall-weather.jpg 600w,
-                images/fall-weather.jpg 400w,
-                images/fall-weather.jpg 200w" alt="Fall Leaves">
+            <div class="grid-item"></div>
+            <img class="second" src="images/fall-weather.jpg" alt="" sizes="80vw" width="200">
                 <figcaption>Tall Trees with Beautiful Fall Leaves</figcaption>
-            </figure>
             
-            <figure> <img class="third" src="images/dark-cloudy-sky.jpg"
-            srcset="images/dark-cloudy-sky.jpg 600w,
-                images/dark-cloudy-sky.jpg 400w,
-                images/dark-cloudy-sky.jpg 200w" alt="Dark Cloudy Sky">
+            <div class="grid-item"></div>
+            <img class="third" src="images/dark-cloudy-sky.jpg" alt="Dark Cloudy Sky" sizes="80vw" width="200">
                 <figcaption>Dark Cloudy Sky over a Lonely Road</figcaption>
-            </figure>
-            
-            <figure> <img class="fourth" src="images/frosty-photo.jpg"
-            srcset="images/frosty-photo.jpg 600w,
-                images/frosty-photo.jpg 400w,
-                images/frosty-photo.jpg 200w" alt="Frost">
+
+            <div class="grid-item"></div>
+            <div class="fourth" src="images/frosty-photo.jpg" alt="Frost" sizes="80vw" width="200"></div>
                 <figcaption>Frosty Branches on a Cold Winter Morning</figcaption>
-            </figure>
             
-            <figure> <img class="fifth" src="images/lightning.jpg"
-            srcset="images/lightning.jpg 600w,
-                images/lightning.jpg 400w,
-                images/lightning.jpg 200w" alt="Lightning">
+            <div class="grid-item"></div>
+            <img class="fifth" src="images/lightning.jpg" alt="Lightning" sizes="80vw" width="200">
                 <figcaption>A Dark Sky Filled with Lightning</figcaption>
-            </figure>
             
-             <figure> <img class="sixth" src="images/snowy-road.jpg"
-            srcset="images/snowy-road.jpg 600w,
-                images/snowy-road.jpg 400w,
-                images/snowy-road.jpg 200w" alt="Snowy Road">
+            <div class="grid-item"></div>
+            <img class="sixth" src="images/snowy-road.jpg" alt="Lonely Snowy Winter Road" sizes="80vw" width="200">
                 <figcaption>A Lonely Snowy Winter Road</figcaption>
-            </figure>
             
         </div>
-    
-    </main>
     
 <footer>
     <aside>
