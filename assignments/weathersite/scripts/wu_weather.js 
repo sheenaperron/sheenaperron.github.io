@@ -1,0 +1,24 @@
+var weatherObject= new XMLHttpRequest();
+weatherObject.open('GET','http://api.wunderground.com/api/da8bb9f4ef3390e0/conditions/q/MN/Franklin.json',true);
+weatherObject.send();
+weatherObject.onload = function()
+{
+
+    var weatherInfo = JSON.parse(weatherObject.responseText);
+    console.log(weatherInfo);
+document.getElementById('town').innerHTML = weather.Info.current_observation.display_location.full;
+document.getElementById('currWeather').innerHTML = weatherInfo.current_observation.weather;
+document.getElementById('currTemp').innherHTML = weatherInfo.current_observation.temp_f;
+document.getElementById('currWind').innerHTML = weatherInfo.current_observation.wind_mph;
+document.getElementById('imgIcon').innerHTML = weatherInfo.current_observation.icon_url;
+}
+
+var forecastObject = new XMLHttpRequest();
+forecastObject.open('GET', 'http://api.wunderground.com/api/da8bb9f4ef3390e0/forecast/q/CA/San_Francisco.json');
+forecastObject.send();
+forecastObject.onload = function()
+{
+    var forecastInfo = JSON.parse(forecastObject.responseText);
+    console.log(forecastInfo);
+    document.getElementById('forecast').innerHTML = forecastInfo.txt_forecast.forecastday["0"].fcttext;
+}
