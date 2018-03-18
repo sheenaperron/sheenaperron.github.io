@@ -1,11 +1,11 @@
-@media only screen and (min-width: 64em) {
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
-main {
-       /* display: inline-block;*/
-        /*text-align: center;*/
-        padding: 0;
-        max-width: 1200px;
-}
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+@media only screen and (min-width: 64em) {
+    
+    body {
+        font-size: 16px;
+    }
     
 article p.town-article img {
       width: 29.333%;
@@ -36,6 +36,26 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #96B460;
 }
+    
+main {
+    /* display: inline-block;*/
+    /*text-align: center;*/
+    padding: 0;
+    max-width: 1200px;
+    text-align: center;
+}
+    
+main .weathsum{
+    padding: 2px;
+    border-style:solid;
+    border-width: 8px;
+    border-color: gray;
+    width: 100%;
+}
+
+main section{
+    grid-template-columns: 1fr 1fr;
+}
 
 div#gallery {
     display: grid;
@@ -47,4 +67,29 @@ div#gallery {
 div#gallery figure img:hover {
     box-shadow: 5px 5px 10px gray;
 }
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    background-color: #326F8B;
+    color: #fff;
+    padding: 0px;
 }
+
+footer h4 {
+    margin: 8px;
+    font-size: 18px;
+}
+footer aside {
+    text-align: center;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    font-size: 14;  
+} 

@@ -2,10 +2,6 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
 
 body {
   font-size: 16px;
@@ -19,12 +15,6 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     padding: 1rem;
     max-width: 1200px;
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-}
-
-header {
-    font-size: 20px;
-    color: black;
-    align-content: left;
 }
 
 header {
@@ -101,19 +91,11 @@ nav ul li a:hover {
     color:#fff;
 }
 
-/*main {
-    display: inline-flex;
-    flex-flow: column nowrap;
-    margin: 20px auto;
-    max-width: 800px;
+main {
     color: black; /*main content font color*/
-}*/
+}
 
 main h2 {
-    display: inline-flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
     text-align:center;
     font-family: sans-serif;
     font-weight: bold;

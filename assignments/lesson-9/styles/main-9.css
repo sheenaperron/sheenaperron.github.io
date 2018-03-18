@@ -2,16 +2,15 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-.container {
+/*.container {
     display: flex;
     flex-direction: column;
-}
+} */
 
 body {
   font-size: 16px;
     font-family: 'Georgia', 'Palation', serif;
     color: black;
-    overflow: auto;
   /* Declare the base font-family - from google font api or other */
 }
 
@@ -104,16 +103,25 @@ nav ul li a:hover {
 }
 
 main {
-    display: inline-flex;
-    flex-flow: column nowrap;
+    text-align: center;
     margin: 20px auto;
     max-width: 800px;
     color: black; /*main content font color*/
 }
 
+main .weathsum{
+    padding: 2px;
+    border-style:solid;
+    border-width: 8px;
+    border-color: gray;
+    width: 100%;
+}
+
+main section{
+    grid-template-columns: 1fr 1fr;
+}
+
 main h2 {
-    display: inline-flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     text-align:center;
@@ -131,23 +139,7 @@ main h3 {
     color: #326F8B
 }
 
-section.forecast h3 {
-    margin-left: auto;
-}
-
-table {
-    border-collapse: collapse;
-    align-content: center;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-table, th, td {
-    border: 2px solid gray;
-    padding: 10px;
-}
-
-main figure {
+/*main figure {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -161,139 +153,13 @@ main figure img {
     justify-content: center;
     min-width: 300px;
     align-items: center;
-}
-
-/*picture img {
-    padding: .5rem 0 .5rem;
-    width: 30%
-    height: 30%;
-}
-
-main figure.sunny-large {
-    width: 100%;
-    margin: auto;
-}
-
-/*main figure.sunny-large img{
-    width: 100%;}
-
-
-.hamburger {display: block;
-            position: absolute;
-            top: 2.0rem;
-            right: 1.25rem;}
-
-.navigation {
-    list-style:none;
-    padding-left: 0;
-}
-
-.navigation li {
-    display: none;
-}
-
-@media only screen and (max-width: 37.5em) {
-    .navigation.responsive {
-        position: absolute;
-        margin:0 0 0 0;
-        top: 12px;
-        right: 45px;
-        }
-    
-    .navigation.responsive li {
-        background-color: gray;
-        display: block;
-        width: 100%;
-        margin: 2 px 0;
-        border: 1px solid #ddd;}
-    
-    .navigation.responsive.li a {
-        padding: 5px;
-        text-align: center;
-        display: block;
-        text-decoration: none;
-        font-weight: bold;}
-    
-    .navigation.responsive li a:hover {
-        background-color: #ddd;
-    } 
-
-
-section {
-    text-align: center;
-}
-
-.forecast {
-    display:none;
-}*/
-
-.highlow {
-    font-size 16px;
-    text-align: center;
-}
-
-.current {
-    margin-top: 4px;
-    text-align: center;
-    font-size: 16px;
-}
-
-.current p {
-    display: block;
-    vertical-align: top;
-    padding-right: 10px;
-}
-
-.conditions {
-    font-size:16px;
-    padding-bottom: 5px;
-    text-align: center;
 } */
 
-tbody td {
-    font-size: 16px;
-    text-align: center;
-}
-
-th {
-    background-color: #96B460;
-}
-
-.forecast h3 {
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #326F8B;
-    padding: 8px;
-    text-align: center;
-    color: white;
-}
-
 h3 {
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content:space-around;
     align-items: center;
     padding-top: 40px;
     font-size: 20px;
-}
-
-article p {
-    font-size: 18px;
-}
-
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
- /* fill the page in the small/phone view */
-    min-width: 300px;
-    margin: 0;
-    margin-right: 50px;
-}
-
-article {
-   display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center; /*should this center?*/
-}
+} 
 
 footer {
     display: flex;

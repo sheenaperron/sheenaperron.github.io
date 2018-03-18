@@ -26,10 +26,12 @@
         <!--</figure>-->
         <div class="subheading">Up-to-date Weather, Whether You Like It or Not.</div>
   </header>
+    
+    <button class= "hamburger" onclick="toggleNavMenu()">&#9776;</button>
 
   <!-- site navigation use placeholder references -->
     <nav>
-        <button class= "hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <!--<button class= "hamburger" onclick="toggleNavMenu()">&#9776;</button>-->
         <ul id="navMenu" class="hide">
     	   <li><a href="#">Home</a></li>
     	   <li class="active"><a href="/franklin-8.html">Franklin</a></li>
@@ -40,50 +42,30 @@
         </ul>		
     </nav>
     
-    <main>
       <h2>City of Franklin</h2>
-        <figure>
         <img src="images/franklin-image-sunnysky.jpg" alt="sunny-picture" sizes="100vw"
            srcset="images/franklin-image-sunnysky-small.jpg 400w, 
             images/franklin-image-sunnysky-medium.jpg 800w,
             images/franklin-image-sunnysky-large.jpg 1000w">
-        </figure>
-                   
-        <section>
-            <h3>Weather Summary</h3>
-               <div class= "highlow" >
-                <p>High: <strong>89&deg;F</strong></p>  
-                <p class="floatRight">Low: <strong>49&deg;F</strong></p>  
-                </div>
-        
-                <div class="current">
-                    <p>Sunny</p>
-                    <picture>
-                    <img src="images/sunny-weather-forecast-pic.png" alt="sunny" height="100">
-                    </picture>
-                </div>  
-        
-            <div class ="conditions">
-            <p>Precipitation: <strong>0%</strong></p>  
-            <p>Wind Speed: <strong>8mph NW</strong></p>
-            <p>Windchill Temperature:<span id="windChill"></span></p>
-            </div>
-        </section>
-    </main>
- 
-<footer>
-    <aside>
-    <h4>Contact Info</h4>
-      <p><strong>Weather Or Not</strong><br> 123 Sunny Side Street, Franklin, MA 02038 (123) 456-7890 contact@weatherornot.com</p>
-    </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Or Not Weather Site | <span id="currentdate"></span></p>
-</footer>
-
-  <script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
-  <script src="scripts/windchill.js"></script>
     
-  <script>
+    <main>
+        <div class="weathsum">       
+        
+            <h3>Weather for <span id="town">City, State</span></h3>
+            <p>Forecast: <span id = "currWeather">forecast</span></p>  
+            <p>Wind Speed: <span id = "currWind">wind</span> mph </p>
+            <p>Current Temp: <span id= "currTemp">temp</span> &deg;</p>
+            <p>Weather Conditions: <span id="imgIcon">imgIcon</span></p>
+            <img id="weatherIcon" src="" alt="Current Weather">
+                </div>
+    
+    <section>
+    
+    </section>
+        
+    
+    <script>
+        
        var main = document.querySelector('section');
         var section = document.querySelector('section');
         var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
@@ -125,6 +107,19 @@
   }
 }
     </script>
+ 
+<footer>
+    <aside>
+    <h4>Contact Info</h4>
+      <p><strong>Weather Or Not</strong><br> 123 Sunny Side Street, Franklin, MA 02038 (123) 456-7890 contact@weatherornot.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Or Not Weather Site | <span id="currentdate"></span></p>
+</footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+  <script src="scripts/wu_weather.js"></script>
 
 </body>
 </html>
