@@ -27,12 +27,6 @@ header {
     align-content: left;
 }
 
-header {
-    font-size: 20px;
-    color: black;
-    align-content: left;
-}
-
 header img {
     width:150px;
 }
@@ -56,12 +50,20 @@ header .subheading {
     color: #326F8B;
 }
 
+/*header h1 {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}*/
+
 nav {
     display: hide;
     /*background-color: #326F8B;*/
 }
 
 nav ul {
+    display: none;
     list-style-type: none;
     margin: 2px;
     padding: 10px;
@@ -101,13 +103,13 @@ nav ul li a:hover {
     color:#fff;
 }
 
-/*main {
+main {
     display: inline-flex;
     flex-flow: column nowrap;
     margin: 20px auto;
     max-width: 800px;
     color: black; /*main content font color*/
-}*/
+}
 
 main h2 {
     display: inline-flex;
@@ -318,267 +320,10 @@ footer > p {
     text-align: center;
     font-size: 14;  
 } 
-
-
 /* This structure refers to p elements that are direct children of the footer element */
 
 
-/*----Clearfix: Force an Element Not to Collapse----
-.clearfix:after {
-    content:"";
-    display: table;
-    clear:both;
-}
-
-
-
-
-
-/* This main css file contains the default rules and is geared toward the small/phone view 
-
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model 
-
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-body {
-  font-size: 16px;
-    font-family: 'Georgia', 'Palation', serif;
-    color: black;
-    overflow: auto;
-  /* Declare the base font-family - from google font api or other 
-}
-
-header {
-    display: flex;
-    justify-content: flex-start;
-}
-
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements
-    text-align: center;
-    max-width: 1000px;
-    margin: 2rem;
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views
-}
-
-header figure.logo {
-    width: 100px;
-    height: 64px;
-    margin-bottom: 1em;
-}
-
-
-header h1 {
-    font-family: 'Montserrat';
-    font-size: 30px;
-    text-align: center;
-    margin: 0;
-}
-
-.hamburger {display: block;
-            position: absolute;
-            top: 2.0rem;
-            right: 1.25rem;}
-
-.navigation {
-    list-style:none;
-    padding-left: 0;
-}
-
-.navigation li {
-    display: none;
-}
-
-@media only screen and (max-width: 37.5em) {
-    .navigation.responsive {position: relative;}
-    .navigation.responsive li {background-color: #eee;
-    display: block;
-    width: 100%;
-    margin: 2 px 0;
-    border: 1px solid #ddd;}
-    navigation.responsive.li a {padding: 1rem;
-    text-align: center;
-    display: block;
-    text-decoration: none;}
-    .navigation.responsive li a:hover {
-        background-color: #ddd;
-    }
-}
-
-header figure.logo{
-    margin: 0 2% 0 0;
-}
-
-header img {
-    padding-left: 4em;
-    padding-top: 1em;
-}
-
-header .subheading {
-    font-family: 'Montserrat';
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 1em;
-}
-
-nav {
-    background-color: #326F8B;
-    color: white;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin:0;
-    padding:0px;
-    width: 100%;
-    overflow:hidden;
-    }
-
-nav ul li {
-    
-    }
-
-nav ul li a {
-    text-align:center;
-    text-decoration:none;
-    color: #fff;
-    font-family:sans-serif;
-    font-size:14px;
-    padding: 8px;
-}
-
-nav ul li.active a {
-    color:darkgray;
-}
-
-nav ul li a:hover {
-    background-color:white;
-    color:#96B460;
-}
-
-main {
-    padding: 0 2%;
-    min-height: 10rem;
-}
-
-main figure.sunny-large {
-    width: 100%;
-    margin: auto;
-}
-
-main figure.sunn-large img{
-    width: 100%;}
-
-main h2 {
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align:center;
-    font-size: 24px;
-    color:#326F8B;
-}
-
-main h3 {
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #326F8B
-}
-
-main figure {
-    margin: 0 0 .2rem 2%; width: 96%;
-}
-
-main figure img {
-    width: 100%;
-}
-
-picture img {
-    padding: .5rem 0 .5rem;
-    width: 30%
-    height: 30%;
-}
-
-section {
-    text-align: center;
-}
-
-.forecast {
-    display:none;
-}
-
-.highlow {
-    font-size 16px;
-}
-
-.current {
-    font-size: 16px;
-}
-
-.conditions {
-    font-size:16px;
-    padding-bottom: 5px;
-}
-
-tbody td {
-    font-size: 14px;
-    text-align: center;  
-}
-
-table {}
-
-th, td {
-    padding: 10px;
-}
-
-th {
-    background-color: darkgray
-}
-
-.forecast h3 {
-    font-size: 20px;
-    font-weight: bold;
-    background-color: darkgray;
-    padding: 8px;
-    text-align: left;
-}
-
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
- /* fill the page in the small/phone view 
-    padding: .5rem 0 .5rem;
-    height: 100%;
-    width: 100%;
-}
-
-footer {
-    font-size: 10px;
-    font-family: serif;
-    line-height: 1;
-    background-color: #326F8B;
-    color: #fff;
-    text-align: center;
-}
-footer aside {
-    text-align: center;
-}
-
-#footer-title {
-    font-size: 12px;
-}
-
-footer > p {
-    color: white;
-    text-align: center;
-    padding: 1em;
-    
-} /* This structure refers to p elements that are direct children of the footer element */
-
-
-/*----Clearfix: Force an Element Not to Collapse----
+/*----Clearfix: Force an Element Not to Collapse----*/
 .clearfix:after {
     content:"";
     display: table;
