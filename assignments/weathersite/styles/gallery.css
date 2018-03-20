@@ -102,23 +102,35 @@ nav ul li a:hover {
     right: 1.25rem;}
 
 main {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-gap: 5px;
+
 }
 
-main .photos div{
+/*main .photos div{
     display:grid;
     grid-template-columns: 2px;
     grid-gap: 2em;
-}
+}*/
 
 main div{
     border-style: solid;
     border-color: gray;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 8px;
 }
-main div img{
-    width: 25%;
+
+.photos{
+    width: 50%;
+}
+
+div img{
+    display: grid;
+    padding: 5px;
+    width: 50%;
+}
+
+p {
+    padding: 5px;
 }
 /*main h2 {
     display: inline-flex;
