@@ -2,10 +2,10 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-.container {
+/*.container {
     display: flex;
     flex-direction: column;
-}
+}*/
 
 body {
   font-size: 16px;
@@ -49,6 +49,12 @@ header .subheading {
     display:flex;
     color: #326F8B;
 }
+
+.hamburger {
+    display: flex;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;}
 
 /*header h1 {
     font-family: 'Montserrat';
@@ -113,7 +119,6 @@ main {
 
 main h2 {
     display: inline-flex;
-    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     text-align:center;
@@ -126,13 +131,23 @@ main h2 {
 main h3 {
     font-family: sans-serif;
     font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color: #326F8B
+    color: #326F8B;
+    margin-top: 2px;
+    padding: 2px;
+    
 }
 
-section.forecast h3 {
-    margin-left: auto;
+main p {
+    align-content: center;
+}
+
+section{
+    grid-template-columns: 5px; 5px;
+    grid-gap: 8px;
+    padding: 5px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 8px;
 }
 
 table {
@@ -177,11 +192,6 @@ main figure.sunny-large {
 /*main figure.sunny-large img{
     width: 100%;}
 
-
-.hamburger {display: block;
-            position: absolute;
-            top: 2.0rem;
-            right: 1.25rem;}
 
 .navigation {
     list-style:none;
@@ -318,7 +328,7 @@ footer aside {
 footer > p {
     color: white;
     text-align: center;
-    font-size: 14;  
+    font-size: 14; 
 } 
 /* This structure refers to p elements that are direct children of the footer element */
 
