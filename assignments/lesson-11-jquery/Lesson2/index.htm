@@ -32,20 +32,33 @@
             
             //$('.servicesBtn').closest('div').css('background-color', 'rgba(255, 0, 0, 0.2)');
             
-            toggleStyle = function() {
+            //toggleStyle = function() {
                 
-                var inputFields = $('input[type="text"]');
+                //var inputFields = $('input[type="text"]');
                 
-                if ( inputFields.css('background-color')=== 'rgb(255, 0, 0)') {
+                //if ( inputFields.css('background-color')=== 'rgb(255, 0, 0)') {
                     //Set background color to white
-                    inputFields.css('background-color', 'rgb(255, 255, 255)');
-                } else {
+                    //inputFields.css('background-color', 'rgb(255, 255, 255)');
+                //} else {
                     //set background color to red
-                    inputFields.css('background-color', 'rgb(255, 0, 0)');
+                    //inputFields.css('background-color', 'rgb(255, 0, 0)');
+                //}
+            //}
+            
+            //$('#ReqAQuoteBtn').click( toggleStyle );
+            
+            //$('.coreValues').prepend("<li><strong>This is brand new !!</strong></li>");
+            
+            //$("<li><strong>This is also great!!</strong></li>").prependTo(".coreValues");
+            
+            var nameVal = $('input[name="nameVal"]');
+            
+            funciton FillEmpty(){
+                if( nameVal.val() == ''){
+                    nameVal.val( 'John Doe' );
                 }
             }
-            
-            $('#ReqAQuoteBtn').click( toggleStyle );
+            $('#ReqAQuoteBtn').click( FillEmpty );
         })
 	</script>
 </head>
@@ -122,7 +135,7 @@
 						<br>
 						<br>
 					</p>
-					<ul>
+					<ul class="coreValues">
 						<li>Innovative Ideas</li>
 						<li>Ownership</li>
 						<li>Frugality</li>

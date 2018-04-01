@@ -14,9 +14,24 @@
 				return colors[parseInt(Math.random()*colors.length)];
 			}
 
-			// Your jQuery Code goes here
-
-	})
+			// Box Set One uses the mouseover event
+            $('.outerOne').on('mouseover', function(){
+                $(this).css('background-color', randomize);
+            })
+            
+            $('.innerOne').on('mouseover', function(){
+                $(this).css('background-color', randomize);
+	        })
+        
+            // Box Set Two uses the mouseover event
+            $('.outerTwo').on('mouseover', function(){
+                $(this).css('background-color', randomize);
+            })
+            
+            $('.innerTwo').on('mouseover', function(){
+                $(this).css('background-color', randomize);
+	        })
+    })
 	</script>
 </head>
 <body>
