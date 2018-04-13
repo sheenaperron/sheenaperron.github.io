@@ -1,0 +1,149 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+/*.container {
+    display: flex;
+    flex-direction: column;
+}*/
+
+body {
+  font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    overflow: auto;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    padding: 1rem;
+    max-width: 1200px;
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    font-size: 20px;
+    color: black;
+    align-content: left;
+}
+
+header img {
+    width:150px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.hamburger {
+    display: flex;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;}
+
+nav {
+    display: flex;
+    color: black;
+    background-color: #A4CF72;
+    padding: 5px;
+    margin-left: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 2px;
+    padding: 10px;
+    padding-left: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
+
+nav ul li a {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    font-size: 18px;
+    color: black;  
+}
+
+main figure img {
+    width: 100%;
+    margin:auto;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+}
+    
+.column {
+    flex: 25%;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    margin-left: 20px;
+    background-color: #33519A;
+    color: white;
+}
+
+footer h4 {
+    margin: 8px;
+    color: A4CF72;
+    font-size: 20px;
+}
+
+.footrow{
+    display: flex;
+}
+    
+.footcolumn {
+    flex: 25%;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+footer > p {
+    text-align: center;
+    font-size: 14; 
+} 
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Hover effect for Social Media Buttons*/
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #A4CF72;
+    color: white;
+}
+
+/* Twitter */
+.fa-youtube {
+    background: #A4CF72;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #A4CF72;
+    color: white;
+}
+
+
+
+

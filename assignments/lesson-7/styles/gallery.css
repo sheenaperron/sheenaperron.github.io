@@ -2,12 +2,6 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-/*.container {
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-}*/
-
 body {
   font-size: 16px;
     font-family: 'Georgia', 'Palation', serif;
@@ -102,23 +96,38 @@ nav ul li a:hover {
     right: 1.25rem;}
 
 main {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-gap: 5px;
+
 }
 
-main .photos div{
+/*main .photos div{
     display:grid;
     grid-template-columns: 2px;
     grid-gap: 2em;
-}
+}*/
 
-main div{
+/*main div{
     border-style: solid;
     border-color: gray;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 8px;
+}*/
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
 }
-main div img{
-    width: 25%;
+
+/*div img{
+    display: grid;
+    padding: 5px;
+    width: 50%;
+}*/
+
+p {
+    padding: 5px;
 }
 /*main h2 {
     display: inline-flex;
