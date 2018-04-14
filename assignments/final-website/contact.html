@@ -25,10 +25,10 @@
         
     <nav>
         <ul>
-    	   <li class="active"><a href="/final-home.html">Home</a></li>
+    	   <li><a href="/final-home.html">Home</a></li>
     	   <li><a href="/adventures-page.html">Adventure Tours</a></li>
-    	   <li><a href="">Events</a></li>
-    	   <li><a href="">Sales</a></li>
+    	   <li><a href="/event-page.html">Events</a></li>
+    	   <li><a href="/sales.html">Sales</a></li>
     	   <li><a href="">Service</a></li>
            <li><a href="/contact.html">Contact</a></li>
         </ul>	
@@ -48,14 +48,14 @@
     <div class="column">
       <form action="/action_page.php">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstname" placeholder="First Name">
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastname" placeholder="Last Name">
         <label for="country">Country</label>
         <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
           <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="other">Other</option>
         </select>
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
@@ -68,7 +68,7 @@
 <script>
 // google maps
 function myMap() {
-  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var myCenter = new google.maps.LatLng(45.6770, -111.0429);
   var mapCanvas = document.getElementById("map");
   var mapOptions = {center: myCenter, zoom: 12};
   var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -83,7 +83,7 @@ function myMap() {
         <div class="infoColumn">
             <h2>Location</h2>
             <hr><br>
-            <p><strong>Mountain Spoke Bicycle Shop</strong><br> 123 Spoke Street<br> Bozeman, Montana 5971
+            <p><strong>Mountain Spoke Bicycle Shop</strong><br> 3950 Valley Commons Drive<br> Bozeman, Montana 59715
             <br>
         </div>
               
@@ -115,7 +115,7 @@ function myMap() {
     <div class="footrow">
     <div class="footcolumn">
         <h4>Contact Info</h4>
-        <p><strong>Mountain Spoke Bicycle Shop</strong><br> 123 Spoke Street<br> Bozeman, Montana 59715<br> (123) 456-7890 contact@mountainspoke.com</p>
+        <p><strong>Mountain Spoke Bicycle Shop</strong><br>3950 Valley Commons Drive<br> Bozeman, Montana 59715<br>(123) 456-7890<br>contact@mountainspoke.com</p>
     </div>
    
     <div class="footcolumn">

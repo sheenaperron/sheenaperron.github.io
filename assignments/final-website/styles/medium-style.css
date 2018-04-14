@@ -1,0 +1,26 @@
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+nav ul.hide{
+    display:block;
+}
+
+nav button {
+    display:none;
+}
+
+nav.ul.hide{
+    display:block;
+}
+
+@media only screen and (max-width: 800px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+li a:hover {
+    background-color: #33519A;
+    color: white;
+    padding: 5px;
+}

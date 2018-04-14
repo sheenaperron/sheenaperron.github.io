@@ -9,10 +9,15 @@
 
 fieldset {
     background-color: lightgray;
-    border-radius: 3px; /*rounded corners on form*/
+    width: 400px;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    border-radius: 1px; /*rounded corners on form*/
     margin: 1.5 em 0;
     border: black solid 1px;
 }
+
 
 legend {
     color: white; /*font color*/
@@ -20,13 +25,13 @@ legend {
     margin-left: 1%;
     padding: .5em;
     border-color: black;
-    background-color:gray; /*box label color*/
+    background-color:#33519A; /*box label color*/
     border-radius: .4em;
 }
 
 label {
     display: block;
-    margin: .5em; /*same as 8px*/
+    margin: 5px; /*same as 8px*/
 }
 
 label span{
@@ -42,11 +47,11 @@ input.submitButton {
     color: white;
     border: solid 1px black;
     border-radius: 3px;
-    width: 60%;
+    width: 50%;
     margin: 6px;
-    font-size: 12px;
+    font-size: 16px;
     padding: .6em;
-    background: #326F8B;
+    background: #A4CF72;
     box-shadow: 4px 4px 10px #666;
     
 }
@@ -72,54 +77,5 @@ main {
     color: black; /*main content font color*/
 }
 
-/*.personalInfo {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right:auto;
-    padding: 1em;
-} */
+/*Test CSS*/
 
-/*.stormInfo {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*input, textarea {
-    width: 30%;
-}*/
-
-footer {
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 12px;
-    background-color: #326F8B;
-    color: #fff;
-    padding: 0px;
-}
-
-footer h4 {
-    font-size: 18px;
-    padding-top: 2px;
-}
-footer aside {
-    text-align: center;
-}
-
-footer > p {
-    color: white;
-    text-align: center;
-    font-size: 14;
-    padding-bottom: 2px;
-    
-} /* This structure refers to p elements that are direct children of the footer element */
-
-
-/*----Clearfix: Force an Element Not to Collapse----*/
-.clearfix:after {
-    content:"";
-    display: table;
-    clear:both;
-}
