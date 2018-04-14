@@ -28,7 +28,7 @@ header {
 }
 
 header img {
-    width:150px;
+    width:200px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 20px;
@@ -58,10 +58,16 @@ nav ul {
     justify-content: space-between;
     }
 
+nav ul.hide{
+    display:none;
+}
+
 nav ul li a {
     display: inline-flex;
     flex-flow: row nowrap;
-    font-size: 18px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: black;  
 }
 
@@ -71,13 +77,104 @@ main figure img {
     justify-content: center;
 }
 
+body h1{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+body h2{
+    align-content: center;
+    justify-content: center;
+    text-align:center;
+}
+
+.welcomepara{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
 .row{
     display: flex;
 }
     
 .column {
     flex: 25%;
-    padding: 10px;
+    margin: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2px solid #3f3f3f;
+}
+
+.button1{
+    background-color: #33519A;
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 15px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #33519A;
+}
+
+.button2{
+    background-color: #A4CF72;
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 15px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #A4CF72;
+}
+
+.button3{
+    background-color: #3f3f3f;
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 15px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button3:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #3f3f3f;
 }
 
 footer {
@@ -89,11 +186,12 @@ footer {
     margin-left: 20px;
     background-color: #33519A;
     color: white;
+    margin-top: 70px;
 }
 
 footer h4 {
     margin: 8px;
-    color: A4CF72;
+    color: #A4CF72;
     font-size: 20px;
 }
 
@@ -103,20 +201,23 @@ footer h4 {
     
 .footcolumn {
     flex: 25%;
-    padding: 20px;
+    padding: 60px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     text-align: center;
+    justify-content: center;
     
 }
 
 footer > p {
     text-align: center;
-    font-size: 14; 
+    font-size: 14px;
 } 
 
 .fa {
     padding: 20px;
-    font-size: 50px;
     width: 50px;
+    font-size: 50px;
     text-align: center;
     text-decoration: none;
 }
@@ -132,18 +233,176 @@ footer > p {
     color: white;
 }
 
-/* Twitter */
-.fa-youtube {
-    background: #A4CF72;
-    color: white;
-}
-
 /* Instagram */
 .fa-instagram {
     background: #A4CF72;
     color: white;
 }
 
+/* YouTube */
+.fa-youtube {
+    background: #A4CF72;
+    color: white;
+}
 
+/*---Adventures Tour Page---*/
+
+.tour1 {
+    overflow:auto;
+    padding: 10px;
+}
+
+.tourPhoto1 {
+    float:right;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.tour1 h3{
+    color: #33519A;
+}
+
+.tour2 {
+    overflow:auto;
+    padding: 10px;
+}
+
+.tourPhoto2 {
+    float:left;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.tour2 h3{
+    color: #33519A;
+}
+
+/*---Contact Page---*/
+
+{
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #33519A;
+    font-size: 20px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #A4CF72;
+}
+
+/* container/contact section */
+.container {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.infoRow{
+    display: flex;
+    justify-content: center
+}
+
+.infoColumn{
+    width: 40%;
+    margin: 5px;
+    margin: 30px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2px solid #3f3f3f;
+    
+}
+
+/*Sales Page*/
+
+.salesRow{
+      display: flex;
+    justify-content: center
+}
+
+.salesColumn{
+    flex: 25%;
+    margin: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    border: 2px solid #3f3f3f;
+}
+
+.salesColumn img{
+    margin-bottom: 15px;
+}
+
+.salesPara p{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.salesPara H2{
+    text-align: center;
+}
+
+.salesPara H3{
+    text-align: left;
+    padding: 10px;
+    background-color:#A4CF72;
+}
+
+.saleButton1{
+    background-color: #A4CF72;
+    border: 2px solid black;
+    color: black;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 15px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #A4CF72;
+}
 
 
